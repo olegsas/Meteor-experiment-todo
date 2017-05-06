@@ -12,7 +12,14 @@ Template.hello.helpers({
   counter() {
     return Template.instance().counter.get();
   },
+
 });
+
+Template.colorSquare.helpers({
+  currentColor() {
+    return "blue";
+  }
+})
 
 Template.hello.events({
   'click button'(event, instance) {

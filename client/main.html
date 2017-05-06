@@ -7,6 +7,9 @@
 
   {{> hello}}
   {{> info}}
+
+{{> colorSquare color1='green' color2='purple'}}
+
 </body>
 
 <template name="hello">
@@ -22,4 +25,10 @@
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul>
+</template>
+
+
+
+<template name="colorSquare">
+  <div class='color-square' style='background: {{currentColor}}'>123</div>
 </template>
